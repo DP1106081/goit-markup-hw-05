@@ -565,11 +565,12 @@ a {
   background-color: transparent;
   padding-left: 38px;
   padding-right: 16px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
 }
 
 .modal-input:focus {
-  fill: #4d5ae5;
+  border-color: #4d5ae5;
 }
 
 .modal-input:focus + .modal-input-icon {
@@ -586,6 +587,7 @@ a {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-label {
@@ -615,12 +617,19 @@ a {
   line-height: 1.16667;
 
   border: 1px solid rgba(46, 47, 66, 0.4);
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   border-radius: 4px;
   width: 100%;
   background-color: transparent;
   resize: none;
 }
+
+.modal-text-area:focus {
+  border-color: #4d5ae5;
+}
+
 .modal-text-area::placeholder {
   color: rgba(46, 47, 66, 0.4);
 }
@@ -667,6 +676,11 @@ a {
   align-items: center;
   fill: transparent;
   margin-right: 8px;
+
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-label {
