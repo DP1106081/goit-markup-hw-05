@@ -529,18 +529,16 @@ a {
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-}
-.footer-btn:focus,
-.footer-btn:hover {
-  background-color: #31d0aa;
-}
-.footer-btn-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
+}
+.footer-btn:focus,
+.footer-btn:hover {
+  background-color: #31d0aa;
 }
 
 .subscribe-icon {
@@ -744,7 +742,9 @@ a {
   background-color: #404bbf;
 }
 /* ---------------CHECKBOX------------------------------- */
-
+.checkbox-field {
+  margin-top: 16px;
+}
 .custom-checkbox {
   width: 16px;
   height: 16px;
